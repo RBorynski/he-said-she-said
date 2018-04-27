@@ -1,0 +1,6 @@
+Most virtual readers sequence their views by page (often to match the page structure of the original hardcopy, or have entire chapters or the entire text as one long scrolldown). While I pesonally prefer reading books the old fashioned way, I feel that the mistake many apps make is that they try to emulate a book, when a book and computer are very different things ux-wise.)
+DRY has been a concept often discussed in this, and what I want to with this project is get rid of the confusing "he said" and "she said" where one has to waste time figuring out who said what in stories is by breaking up a few short stories of mine into arrays of objects, with each object holding a quote, the name of the character speaking (the narrator is the de facto character in 3rd person situations, and the quote order number.) The next quote starts when the first character stops speaking; the next quote appears when the user clicks on the next button.  
+  This would be a great app for chilrens to learn how to read. I feel the need to do this project in React to also accomodate pacey readers, because otherwise they would be disuaded from having too long a wait time between different characters speaking  on click . I also plan to add a user login and logout feature using ruby on rails.
+
+  
+
