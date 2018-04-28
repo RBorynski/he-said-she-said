@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { BrowserRouter as Router, Route } from "react-router-dom"
+import NextCharButton from "../NextCharButton"
+
 // console.log(StoriesArray)
 
 
@@ -19,10 +21,14 @@ class ReadingPage extends Component {
       <div className="MainView">
         <header className="App-header">
          Reading Page
+         <NextCharButton/>
         </header>
-<h2> Reading Made Easier </h2>
-
-
+     <div class = "Quote Screen">
+quote screen
+     </div>
+<div class = "Character Speaking Screen">
+character speaking
+</div>
 
       </div>
 
