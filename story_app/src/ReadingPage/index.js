@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { BrowserRouter as Router, Route } from "react-router-dom"
-import NextCharButton from "../NextCharButton"
+import NextPrevButtons from "../NextPrevButtons"
 
 // console.log(StoriesArray)
 
@@ -21,7 +21,7 @@ class ReadingPage extends Component {
       <div className="MainView">
         <header className="App-header">
          Reading Page
-         <NextCharButton/>
+         <NextPrevButtons/>
         </header>
      <div class = "Quote Screen">
 quote screen
