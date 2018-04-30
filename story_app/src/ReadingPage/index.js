@@ -8,25 +8,52 @@ import PrevNextButtons from "../PrevNextButtons"
 
 
 
-
+//create constructor that hardcodes that story
+//page number
+//render the story from the state
 
 
 
 
 class ReadingPage extends Component {
+ constructor(props) {
+    super(props);
+    this.state = {page: 0} ;
 
+    // This binding is necessary to make `this` work in the callback
+    this.increasePage = this.increasePage.bind(this);
+    this.decreasePage = this.decreasePage.bind(this);
+  }
+
+increasePage () {
+    if (this.state.page<7)
+    {this.setState({page: this.state.page + 1});}
+  console.log(this.state.page)
+  }
+
+  decreasePage () {
+    console.log(this.state.page)
+    if (this.state.page>0)
+    {this.setState({page: this.state.page - 1});}
+
+  }
   render() {
     return (
 
       <div className="MainView">
         <header className="App-header">
          Reading Page
-         <PrevNextButtons/>
+         <PrevNextButtons
+ page =  {this.state.page}
+ decreasePage = {this.decreasePage}
+ increasePage = {this.increasePage}
+
+  />
         </header>
-     <div class = "Quote Screen">
+     <div className = "Quote Screen">
 quote screen
      </div>
-<div class = "Character Speaking Screen">
+<div className = "Character Speaking Screen">
 character speaking
 </div>
 
