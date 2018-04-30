@@ -14,9 +14,9 @@ class App extends Component {
 <Router>
       <div className="App">
         <header className="App-header">
-          He Said, She Said!
+        <h1>  He Said, She Said! </h1>
         </header>
-<h2> Reading Made Easier </h2>
+
 
 
 
