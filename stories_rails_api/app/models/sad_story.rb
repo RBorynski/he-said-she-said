@@ -1,0 +1,2 @@
+class SadStory < ApplicationRecord
+end
