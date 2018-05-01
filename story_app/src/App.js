@@ -21,7 +21,7 @@ class App extends Component {
 
 
 
-<Route path="/reading" component={ReadingPage} />
+<Route path="/reading" component={ReadingPage}  />
 
 
  </div>
