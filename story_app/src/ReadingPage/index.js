@@ -42,20 +42,19 @@ increasePage () {
     return (
 
       <div className="MainView">
-        <header className="App-header">
-         Reading Page
+
          <PrevNextButtons
  page =  {this.state.page}
  decreasePage = {this.decreasePage}
  increasePage = {this.increasePage}
 
   />
-        </header>
+
      <div className = "Quote Screen">
 quote screen
      </div>
 <div className = "Character Speaking Screen">
-character speaking
+<h3> Speaker: </h3>
 </div>
 
       </div>
