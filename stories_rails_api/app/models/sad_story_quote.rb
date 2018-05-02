@@ -1,2 +1,0 @@
-class SadStoryQuote < ApplicationRecord
-end
