@@ -14,14 +14,14 @@ class App extends Component {
       quotes: []
     };
   }
-  componentDidMount() {
-    api.getStory().then(story => {
+
+
+    api.getStory(2).then(story => {
       this.setState({
         quotes: story.quotes
       });
     });
     // set state inside of component did mount
-  }
   // compoenntdidmount
   // make the api request to get the quote data back from your api
   // once you get the data, set it on state
@@ -32,6 +32,12 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <h1> He Said, She Said! </h1>
+            <button value="happy story" onClick={() => this.handleChooseStory(2)}>
+              choose happy story
+            </button>
+            <button value="sad story" onClick={() => this.handleChooseStory(1)}>
+              choose sad story
+            </button>
           </header>
 
           <Route
