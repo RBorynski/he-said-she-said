@@ -1,6 +1,6 @@
 const api = {
-  getStory(id) {
-    return fetch("/api/stories/${id}").then(response => response.json());
+  getStory() {
+    return fetch("/api/stories/2").then(response => response.json());
   }
 };
 

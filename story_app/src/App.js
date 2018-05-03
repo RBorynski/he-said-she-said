@@ -3,14 +3,25 @@ import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import ReadingPage from "./ReadingPage";
-import API from "./api";
+import api from "./api";
 // import PrevNextButtons from "./PrevNextButtons"
 
 class App extends Component {
-  // add constructor
-  // add super
-  // add state, with quotes as an empty array
-
+  constructor(props) {
+    super(props);
+    // add state, with quotes as an empty array
+    this.state = {
+      quotes: []
+    };
+  }
+  componentDidMount() {
+    api.getStory().then(story => {
+      this.setState({
+        quotes: story.quotes
+      });
+    });
+    // set state inside of component did mount
+  }
   // compoenntdidmount
   // make the api request to get the quote data back from your api
   // once you get the data, set it on state
@@ -22,8 +33,13 @@ class App extends Component {
           <header className="App-header">
             <h1> He Said, She Said! </h1>
           </header>
-          // pass this.state.quotes into your ReadingPage componenet as a prop
-          <Route path="/reading" component={ReadingPage} />
+
+          <Route
+            path="/reading"
+            render={() => {
+              return <ReadingPage quotes={this.state.quotes} />;
+            }}
+          />
         </div>
       </Router>
     );
