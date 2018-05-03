@@ -1,4 +1,3 @@
 class Story < ApplicationRecord
- has_many :quotes
- order :sequence
+  has_many :quotes
 end
