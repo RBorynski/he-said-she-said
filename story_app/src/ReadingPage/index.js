@@ -13,7 +13,7 @@ class ReadingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: 1
+      page: 0
     };
 
     // This binding is necessary to make `this` work in the callback
@@ -30,7 +30,7 @@ class ReadingPage extends Component {
 
   decreasePage() {
     console.log(this.state.page);
-    if (this.state.page > 1) {
+    if (this.state.page > 0) {
       this.setState({ page: this.state.page - 1 });
     }
   }
