@@ -37,10 +37,10 @@ class App extends Component {
               value="happy story"
               onClick={() => this.handleChooseStory(2)}
             >
-              choose happy story
+              Funny Story
             </button>
             <button value="sad story" onClick={() => this.handleChooseStory(1)}>
-              choose sad story
+              Sad Story
             </button>
           </header>
 

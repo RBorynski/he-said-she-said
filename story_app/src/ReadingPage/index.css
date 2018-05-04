@@ -1,29 +1,25 @@
-
 .MainView {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 }
 
 .CharStuff {
-  display:inline-block;
-
+  display: inline-block;
 }
 .QuoteScreen {
-  display:flex;
+  display: flex;
   background-color: rgb(166, 166, 166);
-flex: 0 0 100%;
-flex-direction:row;
-height: 40px;
-flex-grow:4;
+  flex: 0 0 100%;
+  flex-direction: row;
+  height: 40px;
+  flex-grow: 4;
+  padding: 10px;
 }
 
 .CurrentChar {
   background-color: rgb(166, 166, 166);
-flex: 0 0 50%;
+  flex: 0 0 50%;
 }
 
-.PrevNextButtons{
-
-
-
+.PrevNextButtons {
 }

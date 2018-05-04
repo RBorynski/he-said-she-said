@@ -34,6 +34,7 @@ class ReadingPage extends Component {
       this.setState({ page: this.state.page - 1 });
     }
   }
+
   render() {
     if (this.props.quotes.length == 0) {
       return "wait up";
@@ -47,7 +48,7 @@ class ReadingPage extends Component {
               increasePage={this.increasePage}
             />
             <div className="CurrentChar">
-              <p> {this.props.quotes[this.state.page].character}</p>
+              <p> {this.props.quotes[this.state.page].character} said:</p>
             </div>
           </div>
           <div className="QuoteScreen">
