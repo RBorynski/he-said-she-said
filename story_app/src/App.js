@@ -45,7 +45,7 @@ class App extends Component {
           </header>
 
           <Route
-            path="/reading"
+            path="/"
             render={() => {
               return <ReadingPage quotes={this.state.quotes} />;
             }}
