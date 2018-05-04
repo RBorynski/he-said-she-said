@@ -12,27 +12,9 @@ import "./index.css";
 class ReadingPage extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      page: 0
-    };
+    console.log("are props updating?", this.props.page);
 
     // This binding is necessary to make `this` work in the callback
-    this.increasePage = this.increasePage.bind(this);
-    this.decreasePage = this.decreasePage.bind(this);
-  }
-
-  increasePage() {
-    if (this.state.page < this.props.quotes.length - 1) {
-      this.setState({ page: this.state.page + 1 });
-    }
-    console.log(this.state.page);
-  }
-
-  decreasePage() {
-    console.log(this.state.page);
-    if (this.state.page > 0) {
-      this.setState({ page: this.state.page - 1 });
-    }
   }
 
   render() {
@@ -41,18 +23,17 @@ class ReadingPage extends Component {
     } else {
       return (
         <div className="MainView">
-          <div ClassName="CharStuff">
+          <div className="CharStuff">
             <PrevNextButtons
-              page={this.state.page}
-              decreasePage={this.decreasePage}
-              increasePage={this.increasePage}
+              decreasePage={this.props.decreasePage}
+              increasePage={this.props.increasePage}
             />
             <div className="CurrentChar">
-              <p> {this.props.quotes[this.state.page].character} said:</p>
+              <p> {this.props.quotes[this.props.page].character} said:</p>
             </div>
           </div>
           <div className="QuoteScreen">
-            <p> {this.props.quotes[this.state.page].quote}</p>
+            <p> {this.props.quotes[this.props.page].quote}</p>
           </div>
         </div>
       );
