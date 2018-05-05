@@ -4888,3 +4888,403 @@ Processing by StoriesController#show as */*
 Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.7ms)
 
 
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (7944.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "stories_rails_api_development"[0m
+  ↳ bin/rails:4
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (256.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "stories_rails_api_development"[0m
+  ↳ bin/rails:4
+  [1m[35m (233.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "stories_rails_api_test"[0m
+  ↳ bin/rails:4
+  [1m[35m (542.4ms)[0m  [1m[35mCREATE DATABASE "stories_rails_api_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (522.1ms)[0m  [1m[35mCREATE DATABASE "stories_rails_api_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4885374938465026635)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateStories (20180502150925)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (22.8ms)[0m  [1m[35mCREATE TABLE "stories" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180502150925_create_stories.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180502150925"]]
+  ↳ bin/rails:4
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateQuotes (20180502151044)
+  [1m[35m (6.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (17.9ms)[0m  [1m[35mCREATE TABLE "quotes" ("id" bigserial primary key, "quote" text, "character" character varying, "sequence" integer, "story_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180502151044_create_quotes.rb:3
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE  INDEX  "index_quotes_on_story_id" ON "quotes"  ("story_id")[0m
+  ↳ db/migrate/20180502151044_create_quotes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180502151044"]]
+  ↳ bin/rails:4
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (2.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-05 20:01:00.681478"], ["updated_at", "2018-05-05 20:01:00.681478"]]
+  ↳ bin/rails:4
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4885374938465026635)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mStory Create (1.0ms)[0m  [1m[32mINSERT INTO "stories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sad Story"], ["created_at", "2018-05-05 20:02:29.963533"], ["updated_at", "2018-05-05 20:02:29.963533"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (11.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mStory Create (0.6ms)[0m  [1m[32mINSERT INTO "stories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Funny Story"], ["created_at", "2018-05-05 20:02:29.978900"], ["updated_at", "2018-05-05 20:02:29.978900"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mStory Create (0.3ms)[0m  [1m[32mINSERT INTO "stories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Commercial"], ["created_at", "2018-05-05 20:02:29.983829"], ["updated_at", "2018-05-05 20:02:29.983829"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "stories"[0m
+  ↳ db/seeds.rb:33
+  [1m[36mQuote Load (0.7ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.8ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "The best of friends stood on a street corner."], ["character", "narrator"], ["sequence", 1], ["story_id", 1], ["created_at", "2018-05-05 20:02:30.021875"], ["updated_at", "2018-05-05 20:02:30.021875"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "See you later, Jim"], ["character", "Tim"], ["sequence", 2], ["story_id", 1], ["created_at", "2018-05-05 20:02:30.033512"], ["updated_at", "2018-05-05 20:02:30.033512"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.6ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "Bye Tim.See you tomorrow."], ["character", "Jim"], ["sequence", 3], ["story_id", 1], ["created_at", "2018-05-05 20:02:30.044316"], ["updated_at", "2018-05-05 20:02:30.044316"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.6ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "They never met again."], ["character", "narrator"], ["sequence", 4], ["story_id", 1], ["created_at", "2018-05-05 20:02:30.051524"], ["updated_at", "2018-05-05 20:02:30.051524"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.6ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "This cigarette is definitively sobering me up. I feel so much better now."], ["character", "He"], ["sequence", 1], ["story_id", 2], ["created_at", "2018-05-05 20:02:30.058888"], ["updated_at", "2018-05-05 20:02:30.058888"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.6ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", " He took another pull, but as he put his cigarette to his lips, he started coughing as he tasted a disgusting burning sensation and realized he had inhaled the lit part of the cigarette. Too traumatized to take another pull, he threw it away, and began to walk across the sidewalk back into the bar from which he came.\n  A few people ahead of him opened the bar entrance, and the bouncer stepped in front of them."], ["character", "narrator"], ["sequence", 2], ["story_id", 2], ["created_at", "2018-05-05 20:02:30.066375"], ["updated_at", "2018-05-05 20:02:30.066375"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.4ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "I.D."], ["character", "The Bouncer"], ["sequence", 3], ["story_id", 2], ["created_at", "2018-05-05 20:02:30.073712"], ["updated_at", "2018-05-05 20:02:30.073712"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.4ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "They rummaged through their purses and wallets and presented a piece of plastic. The bouncer checked each one, nodded and let them all through, one by one, recycling the ID back to them. He was trying to walk in after them, but the bouncer stepped in front of him, too."], ["character", "narrator"], ["sequence", 4], ["story_id", 2], ["created_at", "2018-05-05 20:02:30.078252"], ["updated_at", "2018-05-05 20:02:30.078252"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.4ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "Sir. You already checked my ID. I was already in there."], ["character", "He"], ["sequence", 5], ["story_id", 2], ["created_at", "2018-05-05 20:02:30.083203"], ["updated_at", "2018-05-05 20:02:30.083203"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "Ohh.. I know."], ["character", "The Bouncer"], ["sequence", 6], ["story_id", 2], ["created_at", "2018-05-05 20:02:30.088067"], ["updated_at", "2018-05-05 20:02:30.088067"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.1ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "2 girlfriends sit on the side of a bar while still having on their graduation hats/gowns  (to imply they had just graduated)."], ["character", "stage directions"], ["sequence", 1], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.092372"], ["updated_at", "2018-05-05 20:02:30.092372"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "Girl! What are you so worried about? We just graduated college!"], ["character", "Girl 1"], ["sequence", 2], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.097437"], ["updated_at", "2018-05-05 20:02:30.097437"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "I keep thinking about my future. I'm worried about where I'm going to be 5 years from now."], ["character", "G2"], ["sequence", 3], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.102196"], ["updated_at", "2018-05-05 20:02:30.102196"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "Don't think about that. Have a drink."], ["character", "G1"], ["sequence", 4], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.106507"], ["updated_at", "2018-05-05 20:02:30.106507"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "Alright"], ["character", "G2"], ["sequence", 5], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.110744"], ["updated_at", "2018-05-05 20:02:30.110744"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "Shows them raising their shot glasses. Then, shows G2 having a wide eyed look before transitioning to G1 And G2 in elevator with '5 Years Later Caption' looking much more eloquent than before, maybe with successful looking men around their arms, with triumphant music playing. They walk out of the elevator  into a penthouse, walk over into a balcony with X Vodka product placement (doesn't have to be exactly like this,overall point is to just to show that they made it).\n      Transition to them back in the bar after they just graduated, camera zones in on g2 to imply she was daydreaming"], ["character", "stage directions"], ["sequence", 6], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.115009"], ["updated_at", "2018-05-05 20:02:30.115009"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.1ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "Girl! You good."], ["character", "G1"], ["sequence", 7], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.119302"], ["updated_at", "2018-05-05 20:02:30.119302"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "Yeah. I'm good. Just feeling so much more positive about my future now. What was that a shot of?"], ["character", "G2"], ["sequence", 8], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.123666"], ["updated_at", "2018-05-05 20:02:30.123666"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "X Vodka. I love it too. Let's have another one."], ["character", "G!"], ["sequence", 9], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.128026"], ["updated_at", "2018-05-05 20:02:30.128026"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "G1 waves towards server, who walks towards them with an X vodka bottle.G2 hesitates and thinks about it, before putting hand out to signify stop to server, who stops"], ["character", "stage directions"], ["sequence", 10], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.132347"], ["updated_at", "2018-05-05 20:02:30.132347"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "I'd love to, but I have to get started on my job applications ."], ["character", "G2"], ["sequence", 11], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.136791"], ["updated_at", "2018-05-05 20:02:30.136791"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mQuote Create (0.3ms)[0m  [1m[32mINSERT INTO "quotes" ("quote", "character", "sequence", "story_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["quote", "X Vodka______think about your future. (you see them walking towards cab)."], ["character", "Voiceover"], ["sequence", 12], ["story_id", 3], ["created_at", "2018-05-05 20:02:30.141053"], ["updated_at", "2018-05-05 20:02:30.141053"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "quotes"[0m
+  ↳ db/seeds.rb:197
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-05-05 16:20:51 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.5ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 49ms (Views: 19.9ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-05-05 16:24:37 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.6ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-05-05 16:24:38 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.6ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-05-05 16:25:35 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.5ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-05-05 16:25:35 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.5ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-05-05 16:25:36 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-05-05 16:25:37 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-05-05 16:25:38 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.5ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-05-05 16:25:40 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-05-05 16:25:40 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-05-05 16:25:41 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-05-05 16:25:41 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+
+

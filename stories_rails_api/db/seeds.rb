@@ -19,7 +19,7 @@ stories = {
 
   funny_story: {
   name: "Funny Story"
-  }
+  },
   commercial: {
 name: "Commercial"
   }
@@ -107,7 +107,7 @@ puts "Added #{Story.count} stories to the database"
 
 # vodka commercial starts
 
-{quote: '2 girlfriends sit on the side of a bar, still having on their graduation hats/gowns, to imply they had just graduated.',
+{quote: '2 girlfriends sit on the side of a bar while still having on their graduation hats/gowns  (to imply they had just graduated).',
   character: "stage directions",
   sequence: 1,
    story_id: 3
@@ -134,8 +134,8 @@ puts "Added #{Story.count} stories to the database"
    story_id: 3
   },
 
-    {quote: 'Shows them raising their shot glasses. Then shows G2 having a wide eyed look before transitioning to G1 And G2 in elevator with "5 Years Later Caption" looking much more eloquent than before, maybe with successful looking men around their arms, with triumphant music playing. They walk out of elevator into penthouse, walk over into balcony, with X Vodka product placement (doesnt have to be exactly like this. Overall point is to just to show that they made it).
-      Transition to them back in the bar after they just graduated, camera zones in on g2 to imply she was daydreaming.' ,
+    {quote: "Shows them raising their shot glasses. Then, shows G2 having a wide eyed look before transitioning to G1 And G2 in elevator with '5 Years Later Caption' looking much more eloquent than before, maybe with successful looking men around their arms, with triumphant music playing. They walk out of the elevator  into a penthouse, walk over into a balcony with X Vodka product placement (doesn't have to be exactly like this,overall point is to just to show that they made it).
+      Transition to them back in the bar after they just graduated, camera zones in on g2 to imply she was daydreaming" ,
   character: "stage directions",
   sequence: 6,
    story_id: 3
@@ -150,7 +150,7 @@ puts "Added #{Story.count} stories to the database"
   sequence: 8,
    story_id: 3
   },
-{quote: "X Vodka. I love it too Let's have another one.",
+{quote: "X Vodka. I love it too. Let's have another one.",
   character: "G!",
   sequence: 9,
    story_id: 3

@@ -60,6 +60,12 @@ class App extends Component {
             <button value="sad story" onClick={() => this.handleChooseStory(1)}>
               Sad Story
             </button>
+            <button
+              value="commercial"
+              onClick={() => this.handleChooseStory(3)}
+            >
+              Commercial
+            </button>
           </header>
 
           <Route
