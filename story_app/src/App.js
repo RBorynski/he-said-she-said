@@ -51,21 +51,26 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <h1> He Said, She Said! </h1>
-            <button
-              value="happy story"
-              onClick={() => this.handleChooseStory(2)}
-            >
-              Funny Story
-            </button>
-            <button value="sad story" onClick={() => this.handleChooseStory(1)}>
-              Sad Story
-            </button>
-            <button
-              value="commercial"
-              onClick={() => this.handleChooseStory(3)}
-            >
-              Commercial
-            </button>
+            <div class="menu">
+              <button
+                value="happy story"
+                onClick={() => this.handleChooseStory(2)}
+              >
+                Funny Story
+              </button>
+              <button
+                value="sad story"
+                onClick={() => this.handleChooseStory(1)}
+              >
+                Sad Story
+              </button>
+              <button
+                value="commercial"
+                onClick={() => this.handleChooseStory(3)}
+              >
+                Commercial
+              </button>
+            </div>
           </header>
 
           <Route
