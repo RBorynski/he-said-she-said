@@ -2,9 +2,7 @@
   width: 25%;
   height: 80px;
   font-size: 60px;
-  background: url("./openbook.jpg");
-  background-repeat: no-repeat;
-  background-size:  ;
+  background-color: rgb(166, 166, 166);
 }
 div {
   margin-top: 5px;
