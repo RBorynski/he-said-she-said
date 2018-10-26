@@ -1,6 +1,6 @@
 .MainView {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .CharStuff {

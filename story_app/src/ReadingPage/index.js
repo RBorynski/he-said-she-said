@@ -19,7 +19,7 @@ class ReadingPage extends Component {
 
   render() {
     if (this.props.quotes.length == 0) {
-      return "wait up";
+      return "All content written by Rafal Borynski.";
     } else {
       return (
         <div className="MainView">
