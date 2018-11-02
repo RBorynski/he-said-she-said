@@ -71,10 +71,10 @@ class App extends Component {
                 Commercial
               </button>
                <button
-                value="commercial"
-                onClick={() => this.handleChooseStory(3)}
+                value="sonnet"
+                onClick={() => this.handleChooseStory(4)}
               >
-                Commercial
+                Sonnet
               </button>
             </div>
           </header>
