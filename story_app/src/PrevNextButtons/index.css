@@ -2,8 +2,9 @@
   width: 25%;
   height: 80px;
   font-size: 60px;
+
   /*background-color: rgb(166, 166, 166);*/
-  background-color: red;
+  background-color: rgb(166, 166, 166);
 }
 div {
   margin-top: 5px;

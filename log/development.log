@@ -7488,3 +7488,577 @@ Processing by StoriesController#show as */*
 Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/static/css/main.6f4a1dc9.css" for 127.0.0.1 at 2018-10-26 15:32:54 -0400
+Processing by CatchAllController#index as CSS
+  Parameters: {"path"=>"static/css/main.6f4a1dc9"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static/css/main.6f4a1dc9.css" for 127.0.0.1 at 2018-10-26 15:32:54 -0400
+Processing by CatchAllController#index as CSS
+  Parameters: {"path"=>"static/css/main.6f4a1dc9"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-10-26 15:32:59 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.7ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-10-26 15:33:08 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-10-26 15:33:20 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-10-26 15:35:39 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-10-26 15:35:45 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-10-26 15:54:56 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 31ms (Views: 10.2ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-10-26 15:54:57 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-10-26 15:54:58 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-10-26 15:54:59 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-10-26 15:55:00 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-10-26 15:55:00 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-10-26 15:55:23 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-10-26 15:55:30 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-10-26 15:55:35 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-10-26 15:55:39 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-10-26 15:55:53 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-10-26 15:55:53 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-10-26 15:55:54 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-10-26 15:55:58 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-10-26 15:55:59 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.2ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-11-02 13:42:06 -0400
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (14.1ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (20.1ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 141ms (Views: 18.9ms | ActiveRecord: 83.5ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 13:48:50 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (1.1ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.6ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-11-02 13:48:59 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-11-02 13:49:06 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-11-02 13:49:52 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:04:05 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.6ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:06:01 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.5ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:06:13 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:09:30 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.5ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:09:54 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.8ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:11:58 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.5ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:11:58 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:12:46 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:12:47 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:12:50 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.5ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:12:50 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:12:50 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:13:08 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.6ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:14:50 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.5ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:14:51 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:14:51 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-11-02 14:14:52 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (1.0ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:14:54 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:14:57 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-11-02 14:14:59 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-11-02 14:15:00 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:15:01 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.3ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/2" for 127.0.0.1 at 2018-11-02 14:18:38 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 2]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:19:37 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-11-02 14:19:39 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:22:46 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:23:26 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:23:57 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/3" for 127.0.0.1 at 2018-11-02 14:24:01 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 3]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:24:33 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 14:45:27 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (1.6ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 2.4ms)
+
+

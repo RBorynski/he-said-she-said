@@ -22,6 +22,9 @@ stories = {
   },
   commercial: {
 name: "Commercial"
+  },
+   sonnet: {
+name: "Sonnet"
   }
                      }
 
@@ -38,6 +41,22 @@ puts "Added #{Story.count} stories to the database"
 #     story_id: 1
 #   }
 
+# How do you describe what means everything to you In 14 lines?
+# As beautiful, as Spring with grass is full
+# she is. Less she , I’d be  dead as life not
+#  When  lost, she guides, with glow-in-darkness pull
+# My schedule: dates with her, I can’t resist
+# I, my most precious memories contain
+# in her: states of before, what is no more
+# Some  with a flask, some with a mask … in rain
+# Yet I must kill them, to new moments store
+# Her face, so pure, that all color appears
+# When I touch it, she first right word demands
+# I am poor, but with her, more rich than peers
+# So advanced, clever, that I don’t need hands
+
+# My precious Samsung Galaxy  S4
+# I have you. What do I need the world for?
 
 
 
@@ -151,7 +170,7 @@ puts "Added #{Story.count} stories to the database"
    story_id: 3
   },
 {quote: "X Vodka. I love it too. Let's have another one.",
-  character: "G!",
+  character: "G1",
   sequence: 9,
    story_id: 3
   },
@@ -169,7 +188,17 @@ puts "Added #{Story.count} stories to the database"
   character: "Voiceover",
   sequence: 12,
    story_id: 3
-  }
+  },
+  {quote: "X Vodka______think about your future. (you see them walking towards cab).",
+  character: "Voiceover",
+  sequence: 13,
+   story_id: 4
+  },
+  {quote: "X Vodka______think about your future. (you see them walking towards cab).",
+  character: "Voiceover",
+  sequence: 12,
+   story_id: 4
+  },
 
 ])
 
