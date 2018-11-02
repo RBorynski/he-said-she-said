@@ -24,7 +24,7 @@ stories = {
 name: "Commercial"
   },
    sonnet: {
-name: "Sonnet"
+name: "sonnet"
   }
                      }
 
@@ -189,7 +189,7 @@ puts "Added #{Story.count} stories to the database"
   sequence: 12,
    story_id: 3
   },
-  {quote: "# As beautiful, as Spring with grass is full
+  {quote:  "As beautiful, as Spring with grass is full
  she is. Less she , I’d be  dead as life isn't
   When  lost, she guides, with glow-in-darkness pull
  My schedule: dates with her, I can’t resist",
@@ -215,7 +215,7 @@ puts "Added #{Story.count} stories to the database"
    story_id: 4
   },
 {quote: "My precious Samsung Galaxy  S4
-I have you. What do I need the world for?",
+  I have you. What do I need the world for?",
   character: "Couplet",
   sequence: 16,
    story_id: 4
