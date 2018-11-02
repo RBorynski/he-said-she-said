@@ -8320,3 +8320,25 @@ Completed 404 Not Found in 2ms (ActiveRecord: 1.0ms)
 ActiveRecord::RecordNotFound (Couldn't find Story with 'id'=1):
   
 app/controllers/stories_controller.rb:4:in `show'
+Started GET "/api/stories/4" for 127.0.0.1 at 2018-11-02 16:43:37 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.5ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 4]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 36ms (Views: 14.0ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/api/stories/1" for 127.0.0.1 at 2018-11-02 16:45:00 -0400
+Processing by StoriesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT  "stories".* FROM "stories" WHERE "stories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stories_controller.rb:4
+  [1m[36mQuote Load (0.6ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."story_id" = $1[0m  [["story_id", 1]]
+  ↳ app/controllers/stories_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 1.5ms)
+
+
